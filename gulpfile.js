@@ -24,8 +24,7 @@ gulp.task('epub',  function(){
 	    args:['--output=sample.epub',
 		  '-s',
 		  '--include-in-header=defstyle.css',
-		  '--filter=plantuml-filter.js']}))
-	.pipe(gulp.dest('html/'));
+		  '--filter=plantuml-filter.js']}));
 });
 
 gulp.task('browser-sync', function(){
