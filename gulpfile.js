@@ -3,7 +3,7 @@ var pandoc = require('gulp-pandoc');
 var browserSync = require('browser-sync');
 
 gulp.task('pandoc', function(){
-    gulp.src('*.md')
+    gulp.src('./src/*.md')
 	.pipe(pandoc({
 	    from:'markdown',
 	    to:'html5',
@@ -16,7 +16,7 @@ gulp.task('pandoc', function(){
 });
 
 gulp.task('epub',  function(){
-    gulp.src('*.md')
+    gulp.src('./src/*.md')
 	.pipe(pandoc({
 	    from:'markdown',
 	    to:'epub',
@@ -31,7 +31,7 @@ gulp.task('browser-sync', function(){
     browserSync.init({
 	server: {
 	    baseDir: './html/',
-	    index: 'sample.html'
+	    index: 'index.html'
 	}
     });
 });
