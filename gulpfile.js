@@ -41,7 +41,7 @@ gulp.task('reload', function(){
 });
 
 gulp.task('default',['pandoc','browser-sync'], function(){
-    gulp.watch('*.md', ['pandoc']);
+    gulp.watch('./src/*.md', ['pandoc']);
     gulp.watch('./html/*.html', ['reload']);
 });
 
