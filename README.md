@@ -15,6 +15,8 @@ precondition: nodejs, npm, gulp and [pandoc-filter-plantuml](https://github.com/
 2. make document folder
 3. then setup it.
 4. make src folder for markdown sources.
+5. start gulp (activate browser sync)
+
 
 ``` shell
 $ git clone https://github.com/tabahara/doc.skel .doc.skel
@@ -25,6 +27,7 @@ $ ln -s ../.doc.skel/defstyle.css
 $ ln -s ../.doc.skel/package.json
 $ npm install
 $ mkdir src
+$ gulp
 ```
 Using git submodule for doc.skel is a good idea.
 
