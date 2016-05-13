@@ -33,7 +33,30 @@ Using git submodule for doc.skel is a good idea.
 
 end.
 
+## How to create slides with Japanese.
 
+1. apply a modification to style file.
+    * search style file by ```$ kpsewhich beamerthemeSingapore.sty```
 
+beamerthemeSingapore.sty
+```
+  \setbeamercolor{section in head/foot}{bg=}
+}
+
+\addtoheadtemplate{\pgfuseshading{beamer@headfade}\vskip-1.25cm}{}
+
+\beamertemplatedotitem
+\usepackage{luatexja}  <====== ADD THIS COMMAND!
+\mode
+<all>
+```
+
+2. execute build a slides by following command;
+
+```
+$ pandoc -t beamer -V theme:Singapore -o slide.pdf src/index.md --latex-engine=lualatex
+```
+
+	
 
 
