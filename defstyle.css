@@ -154,10 +154,11 @@ blockquote > :last-child {
     margin-bottom: 0; }
 
 table {
+    border-collapse: collapse;
     padding: 0; }
 table tr {
     border-top: 1px solid #cccccc;
-    background-color: white;
+    background-color: #f8f8f8;
     margin: 0;
     padding: 0; }
 table tr:nth-child(2n) {
