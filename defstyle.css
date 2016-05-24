@@ -56,13 +56,13 @@ h6 tt, h6 code {
 
 h1 {
     font-size: 20px;
+    border-bottom: 1px solid ;
+    line-height:1.2;
 }
-
 
 h2 {
     font-size: 18px;
-    border-bottom: 1px solid #d2b48c; }
-
+}
 
 h3 {
     font-size: 18px; }
@@ -76,6 +76,10 @@ h5 {
 h6 {
     color: #777777;
     font-size: 16px; }
+
+h1.title { font-size: 180%; line-height:0; border-bottom: 0pt;}
+h2.author { text-align:right; line-height:0;}
+h3.date { text-align:right; line-height:0; }
 
 p, blockquote, ul, ol, dl, li, table, pre {
     margin: 15px 0; }
