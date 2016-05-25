@@ -23,7 +23,7 @@ gulp.task('epub',  function(){
 	    ext:'.html',
 	    args:['--output=sample.epub',
 		  '-s',
-		  '--include-in-header=defstyle.css',
+		  '--epub-stylesheet=defstyle.css',
 		  '--filter=plantuml-filter.js']}));
 });
 
