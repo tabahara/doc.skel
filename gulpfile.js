@@ -1,8 +1,10 @@
 var gulp = require('gulp');
 var pandoc = require('gulp-pandoc');
 var browserSync = require('browser-sync');
+var del = require('del');
 
 gulp.task('pandoc', function(){
+    del(['./html/doc-files/*.png']);
     gulp.src('./src/*.md')
 	.pipe(pandoc({
 	    from:'markdown',
@@ -16,6 +18,7 @@ gulp.task('pandoc', function(){
 });
 
 gulp.task('epub',  function(){
+    del(['./html/doc-files/*.png']);
     gulp.src('./src/*.md')
 	.pipe(pandoc({
 	    from:'markdown',
@@ -31,7 +34,7 @@ gulp.task('browser-sync', function(){
     browserSync.init({
 	server: {
 	    baseDir: './html/',
-	    index: 'index.html'
+	    index: 'README.html'
 	}
     });
 });
