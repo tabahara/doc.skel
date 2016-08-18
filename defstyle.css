@@ -279,4 +279,8 @@ pre {
 pre code, pre tt {
     background-color: transparent;
     border: none; }
+
+figcaption {
+    font-weight: bold;
+}
 </style>
