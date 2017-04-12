@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.12.3",
+    "browser-sync": "^2.18.8",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-pandoc": "^0.2.2"
