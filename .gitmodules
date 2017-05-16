@@ -1,0 +1,3 @@
+[submodule "pandoc-filter-plantuml"]
+	path = pandoc-filter-plantuml
+	url = http://github.com/tabahara/pandoc-filter-plantuml

@@ -12,7 +12,7 @@ gulp.task('pandoc', function(){
 	    ext:'.html',
 	    args:['-s',
 		  '--include-in-header=defstyle.css',
-		  '--filter=plantuml-filter.js',
+		  '--filter=./pandoc-filter-plantuml/plantuml-filter.js',
 		  '--metadata=plantuml-root:html']}))
 	.pipe(gulp.dest('html/'));
 });
@@ -27,7 +27,7 @@ gulp.task('epub',  function(){
 	    args:['--output=sample.epub',
 		  '-s',
 		  '--epub-stylesheet=defstyle.css',
-		  '--filter=plantuml-filter.js']}));
+		  '--filter=./pandoc-filter-plantuml/plantuml-filter.js']}));
 });
 
 gulp.task('browser-sync', function(){
