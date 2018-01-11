@@ -59,6 +59,11 @@ beamerthemeSingapore.sty
 $ pandoc -t beamer -V theme:Singapore -o slide.pdf src/index.md --latex-engine=lualatex
 ```
 
-	
+3 setup plantuml filter
+```
+$ git submodule init
+$ git submodule update
+```
+
 
 
